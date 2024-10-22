@@ -1,0 +1,65 @@
+body{
+    background-color: #CEDDDE;
+}
+nav>a{
+    text-decoration: none;
+    margin: 40px;
+    color: #9CD2D5;
+}
+
+nav{
+    text-align: center;
+    padding:10px;
+    background-color: #00334A;
+    border-radius: 180px;
+}
+
+a:hover{
+    color:rgb(5, 3, 133);
+    background-color: #bcf8f3;
+    border-radius: 180px;
+}
+
+.enZ{
+    animation-duration: 3s;
+    animation-name: apparition_droite;
+    animation-iteration-count: initial;
+    text-align: center;
+}
+
+.enZ{
+    background-image:linear-gradient(260deg,#82CFD8,#bcf8f3);
+    color: #00334A;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    text-align: center;
+}
+
+#strong1{
+    background-color: rgb(104, 195, 255);
+    border-radius: 10px;
+    border-top:3px solid rgb(104, 147, 255) ;
+    color: rgb(0, 23, 97);
+    white-space: nowrap;
+}
+
+
+@keyframes apparition_droite {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+@media (max-width : 750px){
+    #max750{
+        position: absolute;
+    }
+}
