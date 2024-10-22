@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+    background-color: #CEDDDE;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #00334A;
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #82CFD8;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-card h2 {
+    margin: 0.5em 0;
+}
+
+.product-card button {
+    background-color: #007FA9;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.product-card button:hover {
+    background-color: #00334A;
+}
+
+footer {
+    background-color: #007FA9;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
