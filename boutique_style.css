@@ -1,19 +1,9 @@
-
 body {
     margin: 0;
     padding: 0;
     background-color: #CEDDDE;
     font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     height: 100%;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    border-top: 1px solid;
-    background-color: #007FA9;
-    color: white;
-    padding: 10px;
 }
 
 .navbar {
@@ -26,7 +16,8 @@ footer {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 50px
 }
 
 .navbar li {
@@ -39,9 +30,17 @@ footer {
     font-weight: 600;
 }
 
+.navbar a:hover {
+    color: #f5f5f5;
+    background-color: #ff6e33;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .navbar a.active {
     text-decoration: underline;
 }
+
 
 header {
     background-color: #82CFD8;
@@ -91,13 +90,27 @@ main {
 .product-card button:hover {
     background-color: #00334A;
 }
-
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid;
     background-color: #007FA9;
     color: white;
-    text-align: center;
-    padding: 1em 0;
-   
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+}
+.scroll-to-top {
+    position: relative;
+    bottom: 5px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+.scroll-to-top:hover {
+    background-color: #ff6e33;
 }
