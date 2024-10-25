@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Police d'écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="VOITURE.png">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> A propos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="a-propos.html" class="active">A propos</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="titre_back">
+            <h1 id="t2">SupraCars</h1>
+        </div>
+        
+
+        <div id="content">
+            <div class="carousel">
+                
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <img src="photo1.jpg" alt="Image concession">
+                    </div>
+                    <div class="slide" id="s2">
+                        <img src="photo2.png" alt="Image voiture">
+                    </div>
+                    <div class="slide" id="s3">
+                        <img src="photo3.png" alt="Image voiture">
+                    </div>
+                </div>
+
+
+                <div class="navigation">
+                    <label for="slide1" class="prev">&#10094;</label>
+                    <label for="slide2" class="next">&#10095;</label>
+                    <label for="slide3" class="next">&#10095;</label>
+                    <label for="slide1" class="prev">&#10094;</label>
+                </div>
+            </div>
+            
+
+            <section id="info">
+                <div class="half-line">
+                    <div>
+                        <h2>Prenom</h2>
+                        <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prenom">
+                    </div>
+                    <div>
+                        <h2>Nom</h2>
+                        <input type="text" name="nom" id="nom" placeholder="Entrez votre nom">
+                    </div>
+                </div>
+                <div class="line">
+                    <h2>Email</h2>
+                    <input type="email" name="email" id="email" placeholder="votre-email@domaine.ex">
+                </div>
+                <div class="half-line">
+                    <div>
+                        <h2>Date</h2>
+                        <input type="text" name="date" id="date" placeholder="jj/mm/aaaa">
+                    </div>
+                </div>
+                <div class="line">
+                    <h2>Notifications</h2>&nbsp;
+                    
+                    <label for="notifications">
+                        <input type="checkbox" name="notifications" id="notifications">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                </div>
+                <button>Envoyer</button>
+            </section>
+    
+        </div>
+
+        <div id="en_dessous">
+            <section id="texte">
+                <h1>Notre histoire</h1>
+                <p>SupraCars, c'est avant tout une aventure humaine et passionnée qui a commencé en 1995 dans un petit garage, fondé par quatre étudiants, avec un rêve simple : redéfinir l’expérience d’achat de voitures.</p>
+                <p>À l'origine, passionné par l’automobile, ils ont ouvert leur première concession avec une seule idée en tête : offrir des véhicules de qualité tout en plaçant la relation client au centre de leur activité. Leur engagement ? Accompagner chaque conducteur, du choix du modèle jusqu’au dernier kilomètre parcouru.</p>
+                <p>Très vite, leur approche personnalisée et leur souci du détail ont fait la différence. Leur petite entreprise a gagné la confiance de la communauté locale, et ce qui n’était qu’un rêve est devenu une réalité : AutoPrivilège s’est rapidement imposée comme une référence, non seulement pour la diversité de ses véhicules, mais aussi pour la qualité de son service après-vente.</p>
+                <p>Aujourd'hui, plus de 25 ans plus tard, SupraCars est présente dans plusieurs villes, proposant des véhicules neufs et d’occasion soigneusement sélectionnés. Mais ce qui n’a pas changé, c’est notre engagement indéfectible envers nos clients. Nous croyons fermement que chaque voiture raconte une histoire et qu’il est de notre devoir de vous aider à écrire la vôtre.</p>
+                <p>Cette histoire met en avant l’aspect humain de l’entreprise tout en soulignant son expertise et son attachement à la satisfaction des clients. Elle permet aussi de créer une connexion avec les visiteurs du site en montrant que l’entreprise est née d’une passion et qu'elle continue à évoluer en restant fidèle à ses valeurs.</p>
+            </section>    
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>Projet de développement web</p>
+
+        <a href="#top" class="scroll-to-top">Retour en haut</a>
+        <div id="top" style="position: absolute; top: 0;"></div>
+
+        <p>Laura Bornert</p>
+    </footer>
+    
+</body>
+</html>
