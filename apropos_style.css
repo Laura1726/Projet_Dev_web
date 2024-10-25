@@ -211,7 +211,7 @@ button:hover {
 
 #t2 {
     font-size: 70px;
-    background: linear-gradient(to right, #FF4500, #FFA500, #FFD700); /* Dégradé orange */
+    background: linear-gradient(to right, #FF4500, #FFA500, #ff6e33, #f57f17,  #f9a825, #fbc02d,  #fdd835,  #ffeb3b,  #ffee58,  #fff176,  #fff59d,  #fff9c4,  #fffde7, #FFD700); 
     background-clip: text; /* Support pour Firefox */
     -webkit-background-clip: text; /* Support pour Chrome/Safari */
     color: transparent; /* Texte transparent pour voir le dégradé */
