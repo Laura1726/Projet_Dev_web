@@ -4,6 +4,7 @@ body {
     background-color: #CEDDDE;
     font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     height: 100%;
+    zoom: 1.0;
 }
 /*titre*/
 #titre_back{
@@ -20,7 +21,8 @@ body {
     background-clip: text;
     -webkit-background-clip: text; 
     color: transparent; 
-    animation: gradientAnimation 3s linear infinite;
+    animation: gradient 10s ease infinite, move 3s ease infinite;
+    position: relative;
     background-size: 200% 100%;
 }
 @keyframes gradientAnimation {
@@ -185,7 +187,7 @@ h1{
 
 
 main {
-    padding: 2em;
+    margin-bottom: 50px;
 }
 
 .product-grid {
