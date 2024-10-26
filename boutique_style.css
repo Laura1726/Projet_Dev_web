@@ -6,6 +6,31 @@ body {
     height: 100%;
 }
 /*titre*/
+#titre_back{
+    background-color: #007FA9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:0;
+}
+
+#t2 {
+    font-size: 70px;
+    background: linear-gradient(to right, #FF4500, #FFA500, #ff6e33, #f57f17,  #f9a825, #fbc02d,  #fdd835,  #ffeb3b,  #ffee58,  #fff176,  #fff59d,  #fff9c4,  #fffde7, #FFD700); 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+    animation: gradientAnimation 3s linear infinite;
+    background-size: 200% 100%;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
+
+h1{
+    text-align: center;
+}
 
 .navbar {
     background-color: #00334A;
@@ -165,7 +190,7 @@ main {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2em;
   }
   
