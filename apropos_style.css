@@ -5,6 +5,8 @@ body {
     background-color: #CEDDDE;
     font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     height: 100%;
+    zoom: 1.0; /* Définit un zoom de 80% */
+
 }
 
 footer {
@@ -82,13 +84,26 @@ main {
 /*Caroussel*/
 
 .carousel {
-    width: 700px; /* Largeur du carrousel */
-    height: 400px; /* Hauteur du carrousel */
+    width: 700px; 
+    height: 400px; 
     position: relative; top: 50px; left: 200px;
     overflow: hidden;
     border: solid 2px black;
 }
-
+/* .carousel {
+    width: 100%; 
+    max-width: 700px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto; 
+} */
+/* .carousel {
+    width: 80%; 
+    max-width: 500px; 
+    height: auto; 
+    margin: 0 auto; 
+    position: relative;
+} */
 /* Styles de base pour le carrousel */
 .slides {
     display: flex;
@@ -100,9 +115,15 @@ main {
     flex-shrink: 0;
 }
 
-.slide img {
+/* .slide img {
     width: 100%;
     object-fit: contain;
+} */
+
+.slide img {
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur de la diapositive */
+    object-fit: cover; /* Assure un bon ajustement sans déformation */
 }
 
 /* Cacher les inputs radio */
@@ -229,8 +250,49 @@ h1{
 
 /*Responsive*/
 
+/* Responsivité globale pour les éléments */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column; /* Aligne le contenu en colonne sur écrans plus petits */
+        gap: 20px;
+        margin: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #info, #texte {
+        width: 100%; /* Occupe toute la largeur */
+        padding: 0 10px; /* Ajoute de l'espace autour */
+        flex-direction: column; /* Aligne les liens de navigation en colonne */
+        align-content: center;
+
+    }
+    
+    .navbar{
+        flex-direction: column; /* Aligne les liens de navigation en colonne */
+        align-content: center;
+    }
+}
+
+/* Responsivité pour les très petits écrans (mobiles) */
 @media (max-width: 600px) {
-   
+    /* Carrousel en pleine largeur */
+    .carousel {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        border: none;
+    }
+
+    #t2 {
+        font-size: 2rem; /* Taille du titre ajustée */
+    }
+
+    #texte {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 
