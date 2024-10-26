@@ -5,7 +5,7 @@ body {
     background-color: #CEDDDE;
     font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     height: 100%;
-    zoom: 1.0; /* Définit un zoom de 80% */
+    zoom: 0.8; /* Définit un zoom de 80% */
 
 }
 
@@ -90,20 +90,7 @@ main {
     overflow: hidden;
     border: solid 2px black;
 }
-/* .carousel {
-    width: 100%; 
-    max-width: 700px;
-    height: 300px;
-    position: relative;
-    margin: 0 auto; 
-} */
-/* .carousel {
-    width: 80%; 
-    max-width: 500px; 
-    height: auto; 
-    margin: 0 auto; 
-    position: relative;
-} */
+
 /* Styles de base pour le carrousel */
 .slides {
     display: flex;
@@ -114,11 +101,6 @@ main {
     width: 100%;
     flex-shrink: 0;
 }
-
-/* .slide img {
-    width: 100%;
-    object-fit: contain;
-} */
 
 .slide img {
     width: 100%;
@@ -250,7 +232,7 @@ h1{
 
 /*Responsive*/
 
-/* Responsivité globale pour les éléments */
+
 @media (max-width: 768px) {
     #content {
         flex-direction: column; /* Aligne le contenu en colonne sur écrans plus petits */
