@@ -8,35 +8,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Index</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="icon" type="image/x-icon" href="imagesite/VOITURE.png">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
                 <li><a href="boutique.html">Boutique</a></li>
                 <li><a href="panier.html">Panier</a></li>
             </ul>
         </nav>
     </header>
 <div class="image-container">
-    <img src="imagesite/voitureFond.png" alt="Image de fond">
-    <div class="text-overlay">SupraCars le paradis des voitures ! </div>
+    <img src="voitureFond.png" alt="Image de fond">
+    <div class="text-overlay">SupraCars, le paradis des voitures !</div>
 </div>
-    <h1 id="titre1"></h1>
+
+<div class="soldes">
+    <i class="fas fa-ghost"></i>
+    <span class="soldes-text">Soldes Halloween, -50% sur tous nos véhicules oranges</span>
+    <div id="countdown" class="countdown"></div>
+</div>
+
     <div class ="container">
     <div class="apparaît" style="--delay:0s;"><p>
         Bienvenue sur le <strong id="important-text">meilleur site</strong>
-        de vente de voitures ! <br>
+        de vente de voitures !<br>
         Ici, vous trouverez toute une gamme de voitures diverses et variées.
-        <br> Pour plus d'informations, rendez-vous dans l'onglet <strong id="strong2">Boutique</strong>
+        <br> Pour plus d'informations et surtout pour voir nos véhicules disponibles, rendez-vous dans l'onglet <strong id="strong2">Boutique</strong>
          ci-dessus <i class="fas fa-arrow-up"></i>.
+         <div class="image">
+            <img src="ImageVoiture.png" alt="Image de la concession automobile">
+        </div>
         </div>
     </p>
-    <div class="apparaît" style="--delay: 0.2s;"><p>
-        Boîte 2</p>
+    <div class="apparaît non-centré" style="--delay: 0.2s;"><p>
+        <p>
+        <h2>Pour mieux nous découvrir :</h2><br>
+        <ul>
+    <li>Rendez-vous sur place à cette adresse : <a href="https://www.google.fr/maps/place/121-113+Av.+des+Champs-%C3%89lys%C3%A9es,+75008+Paris/@48.8724672,2.2941154,648m/data=!3m2!1e3!4b1!4m15!1m8!3m7!1s0x47e66505aaadd1dd:0xf187c86ce82c7889!2sLa+D%C3%A9fense!3b1!8m2!3d48.8897359!4d2.2418428!16zL20vMGs2ODk!3m5!1s0x47e66fea26a4d09f:0x95f2dd0fbdead4ef!8m2!3d48.8724673!4d2.2989863!16s%2Fg%2F11ggr3m2l0?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" 
+        class="map-link">121-113 Av. des Champs-Élysées, 75008 Paris</a></li>
+    </ul>
+</p>
+<p>
+    <div class="social-icons">
+    <ul>
+    <li>Ou suivez-nous sur : 
+            <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/home" target="blank"><i class="fab fa-x"></i></a>
+            <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin"></i></a></li>
+        </div>
+</p>
+</ul>
     </div>
 </div>
+<footer>
+    Projet de développement web
+
+    <a href="#top" class="scroll-to-top">Retour en haut</a>
+    <div id="top" style="position: absolute; top: 0;"></div>
+
+    Ludovic Decker
+</footer>
 </body>
 </html>
