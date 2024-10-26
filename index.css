@@ -25,7 +25,7 @@ footer {
     align-items: baseline;
     border-top: 1px solid;
     background-color: #007FA9;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
 }
 
@@ -102,18 +102,126 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
+.soldes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6e33; /* Halloween orange */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    text-align: center;
+}
+
+.soldes i {
+    font-size: 1.8rem;
+    animation: bounce 1s infinite;
+    color: #9C27B0; 
+}
+
+.soldes-text {
+    font-size: 1.5rem;
+    animation: color-change 1.5s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.countdown span {
+    display: inline-block;
+    padding: 5px;
+    background-color: #00334A;
+    color: #ffeb3b;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+
+.image {
+    display: flex;                 
+    justify-content: center;      
+    align-items: center;         
+    max-width: 100%;              
+    margin: 20px 0;               
+}
+
+.image img {
+    width: 50%;                  
+    height: auto;                
+    border-radius: 8px;         
+}
+
 .apparaît {
-    width: 90%;
-    max-width: 500px;
-    margin: 15px;
-    padding: 20px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 30px auto; 
+    padding: 40px; 
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
     opacity: 0;
     transform: translateX(-100%);
     animation: apparition 0.8s ease-out forwards;
     animation-delay: var(--delay);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.non-centré {
+    text-align: left;
+}
+
+.apparaît.non-centré i.fab.fa-instagram {
+    font-size: 2rem; 
+    color: #E1306C; 
+    margin-left: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.apparaît.non-centré i.fab.fa-x {
+    font-size: 2rem; 
+    color: #272727; 
+    margin-left: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.apparaît.non-centré i.fab.fa-facebook {
+    font-size: 2rem; 
+    color: #1877F2; 
+    margin-left: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.apparaît.non-centré i.fab.fa-linkedin {
+    font-size: 2rem; 
+    color: #0077B5; 
+    margin-left: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.apparaît.non-centré i.fab {
+    font-size: 2rem;
+    color: #555;
+    margin-right: 10px; 
+    transition: color 0.3s ease;
+    display: inline-block; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #ff6e33; 
 }
 
 #strong2{
@@ -121,21 +229,37 @@ header {
 }
     
 p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #555;
 }
+
+.scroll-to-top {
+    position: relative;
+    bottom: 5px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+.scroll-to-top:hover {
+    background-color: #ff6e33;
+}
     
-    @media (min-width: 768px) {
-        .apparaît {
-            width: 45%;
-        }
+@media (min-width: 600px) {
+    .apparaît {
+        width: 80%;
     }
-    
-    @media (min-width: 1024px) {
-        .apparaît {
-            width: 30%;
-        }
+}
+
+@media (min-width: 1024px) {
+    .apparaît {
+        width: 60%; 
     }
+}
     
     @keyframes apparition {
         0% {
@@ -150,9 +274,36 @@ p {
 
     @keyframes blink {
         0%, 100% {
-            opacity: 1; /* Opacité pleine */
+            opacity: 1;
         }
         50% {
-            opacity: 0; /* Texte invisible */
+            opacity: 0;
         }
     }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    @keyframes color-change {
+        0% { color: #ffffff; }
+        50% { color: #ffd700; } 
+        100% { color: #ffffff; }
+    }
+    
+    .countdown {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffeb3b; 
+        margin-left: 10px;
+    }
+    
+    .countdown span {
+        padding: 0 5px;
+    }
+    
