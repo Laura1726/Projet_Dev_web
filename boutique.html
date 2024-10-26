@@ -18,7 +18,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <div class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar-menu" id="js-menu">
                 <li><a href="index.html" >Accueil</a></li>
                 <li><a href="apropos.html">A propos</a></li>
                 <li><a href="boutique.html" class ="active">Boutique</a></li>
@@ -26,6 +29,7 @@
             </ul>
         </nav>
     </header>
+    
     
     <main>
         <div id="titre_back">
@@ -86,5 +90,11 @@
         <p>Fait par Rimes.Chekki</p>
     </footer>
 </body>
+<script>
+    document.getElementById('js-navbar-toggle').addEventListener('click', function() {
+        document.getElementById('js-menu').classList.toggle('active');
+    });
+</script>
+
 </html>
 

@@ -37,6 +37,19 @@ h1{
 .navbar {
     background-color: #00334A;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    gap: 50px;
+}
+.navbar-toggle {
+    display: none;
 }
 .product-card {
     position: relative;
@@ -164,8 +177,10 @@ h1{
     gap: 50px
 }
 
-.navbar li {
-    display: inline;
+.navbar-menu  li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
 }
 
 .navbar a {
@@ -281,3 +296,44 @@ footer {
 img{
     filter: drop-shadow(1px 1px 20px rgb(41, 127, 155));
 }
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #00334A;
+    }
+    
+    .navbar-menu.active {
+        display: flex;
+    }
+    
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .navbar-toggle .fas {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Une seule colonne en vue mobile */
+    }
+
+    .product-card {
+        width: 100%; /* Prendre toute la largeur en vue mobile */
+        margin: 10px 0; /* Espacement entre les cartes */
+    }
+}
+/* Style pour les écrans plus larges */
+@media (min-width: 768px) {
+    .navbar-menu li {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
