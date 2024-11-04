@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Economie.css">
-    <link rel="icon" href="Favicon.ico" type="image/x-icon">
-    <nav>
-        <a href="index.html" class="nav-btn" > Accueil  </a>
-        <a href="boutique.html" class="nav-btn" > boutique  </a>
-        <a href="panier.html" class="active"> panier  </a>
-        <a href="apropos.html" class="nav-btn" > A propos  </a>
-    </nav>
+
+    <!--Police d'écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="imagesite/VOITURE.png">
+
+
+    <link rel="stylesheet" href="boutique_style.css">
+
+    <title> Notre Boutique</title>
 </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar-menu" id="js-menu">
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="boutique.html" class ="active">Boutique</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <div id="titre_back">
+            <h1 id="t2">SupraCars</h1>
+        </div>
+        <br><br>
+       <div id="vide">
+        <h2>votre panier est vide</h2>
+        <a href="boutique.html" class ="active">Retour Boutique</a>
+       </div> 
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Projet de développement web</p>
 
-<body class="body">
+        <a href="#top" class="scroll-to-top">Retour en haut</a>
+        <div id="top" style="position: absolute; top: 0;"></div>
 
-    <div class="yyy" >
-        <ul class="nav navbar-nav marge">
-            <label for="pet-select">voiture choisie:</label>
-
-            <select name="pets" id="pet-select">
-              <option value="">aucune
-            </option>
-              <option value="dog">Lamborghini</option>
-              <option value="cat">Bugatti</option>
-              <option value="hamster">Ferrari</option>
-              <option value="parrot">Porsche</option>
-              <option value="spider">Maserati</option>
-              <option value="goldfish">Rolls-Royce</option>
-            </select>
-
-
-        </ul>
-    </div>
-
-  
-
+        <p>Fait par Jules.Clercvouillot</p>
+    </footer>
 </body>
+<script>
+    document.getElementById('js-navbar-toggle').addEventListener('click', function() {
+        document.getElementById('js-menu').classList.toggle('active');
+    });
+</script>
 
 </html>
